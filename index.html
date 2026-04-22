@@ -1,410 +1,464 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="module" src="js/main.js"></script>
-    <title>Test</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="overlay"></div>
-      <button class="header-mobile-burger js-open-aside"><img src="/images/burger.svg" alt="#"></button><a class="header-mobile-logo" href="/"><img src="/images/logo.svg" alt="логотип"></a>
-      <div class="header-top">
-        <div class="header-top__container">
-          <div class="header-top__box">
-            <button class="btn-red">Заказать замер</button><a class="header-top__cart" href="#"><svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.83784 3.24324H18.4189L17.2432 9.9054H7.05405L3.91892 0.5H0" stroke="#417A82" stroke-linejoin="round"/>
-<circle cx="8.62128" cy="13.4323" r="1.06757" stroke="#417A82"/>
-<circle cx="15.676" cy="13.4323" r="1.06757" stroke="#417A82"/>
-</svg><span class="header-top__cart-counter">3</span></a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Test</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="overlay"></div>
+    <button class="header-mobile-burger js-open-aside"><img src="images/burger.svg" alt="#"></button><a
+      class="header-mobile-logo" href="/"><img src="images/logo.svg" alt="логотип"></a>
+    <div class="header-top">
+      <div class="header-top__container">
+        <div class="header-top__box">
+          <button class="btn-red">Заказать замер</button><a class="header-top__cart" href="#"><svg width="19"
+              height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.83784 3.24324H18.4189L17.2432 9.9054H7.05405L3.91892 0.5H0" stroke="#417A82"
+                stroke-linejoin="round" />
+              <circle cx="8.62128" cy="13.4323" r="1.06757" stroke="#417A82" />
+              <circle cx="15.676" cy="13.4323" r="1.06757" stroke="#417A82" />
+            </svg><span class="header-top__cart-counter">3</span></a>
+        </div>
+      </div>
+    </div>
+    <aside class="header-aside"><a class="header-aside__logo" href="/"><img src="images/logo-small.svg" alt="#"></a><a
+        class="header-aside__logo-big" href="/"><img src="images/logo.svg" alt="#"></a>
+      <button class="header-aside__burger js-open-aside"><img src="images/burger.svg" alt="#"></button>
+      <div class="header-aside__contacts"><span>Дмитров</span><a href="tel:89256455711">8 (925) 645-57-11</a><a
+          href="tel:84999999999"> 8 (499) 999-99-99</a></div>
+      <nav>
+        <ul class="header-menu">
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-1.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-2.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-3.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-4.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-5.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-6.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-7.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-8.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="images/header-9.svg"
+                alt="#"><span>Lorem</span></a></li>
+          <li class="header-menu__item"><a class="header-menu__link header-menu__link-red" href="#"><img
+                src="images/header-10.svg" alt="#"><span>Калькулятор</span></a></li>
+        </ul>
+      </nav>
+      <button class="header-aside__search js-open-aside"><img src="images/header-11.svg" alt="#"></button>
+      <div class="header-aside__box-bottom">
+        <form class="header-aside-form" action="#">
+          <input class="header-aside-form__input" type="text" name="q" placeholder="Поиск">
+          <label class="header-aside-form__submit">
+            <input name="s" type="submit" value=""><svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="6.5" transform="matrix(-1 0 0 1 14 0)" stroke="#417A82" />
+              <path d="M12.5 14L16 18.5" stroke="#417A82" />
+            </svg>
+          </label>
+        </form>
+        <ul class="header-aside__menu-bottom">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Коммерческим покупателям</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </aside>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="swiper hero__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <div class="hero-slide__bg"><img src="images/hero.jpg" alt="Купите Что-то еще шторы"></div>
+              <div class="container">
+                <div class="hero-slide__box">
+                  <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
+                  <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней
+                    и&nbsp;внешней lorem</p>
+                  <button class="btn-white">Калькулятор</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <div class="hero-slide__bg"><img src="images/hero.jpg" alt="Купите Что-то еще шторы"></div>
+              <div class="container">
+                <div class="hero-slide__box">
+                  <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
+                  <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней
+                    и&nbsp;внешней lorem</p>
+                  <button class="btn-white">Калькулятор</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <div class="hero-slide__bg"><img src="images/hero.jpg" alt="Купите Что-то еще шторы"></div>
+              <div class="container">
+                <div class="hero-slide__box">
+                  <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
+                  <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней
+                    и&nbsp;внешней lorem</p>
+                  <button class="btn-white">Калькулятор</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-box hero__nav-box">
+          <div class="container">
+            <div class="nav-box__btn hero__nav-prev"><svg width="13" height="23" viewBox="0 0 13 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.7071 0.353516L0.707122 11.3535L11.7071 22.3535" stroke="#052E4C" />
+              </svg>
+            </div>
+            <div class="nav-box__pagination hero__pagination"></div>
+            <div class="nav-box__btn hero__nav-next"><svg width="13" height="23" viewBox="0 0 13 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.353546 0.353516L11.3535 11.3535L0.353546 22.3535" stroke="#052E4C" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="nav-box-mobile hero__pagination-mobile"></div>
+      </div>
+    </section>
+    <section class="popular">
+      <h2 class="bg-title popular__bg-title">Популярное</h2>
+      <div class="container">
+        <ul class="popular__list">
+          <li class="popular__item"><a class="popular-card" href="#">
+              <div class="popular-card__bg"><img src="images/popular-1.jpg" alt="Москитные сетки"></div>
+              <h3 class="popular-card__title"><span>Москитные</span> сетки</h3>
+            </a></li>
+          <li class="popular__item"><a class="popular-card" href="#">
+              <div class="popular-card__bg"><img src="images/popular-2.jpg" alt="Lorem"></div>
+              <h3 class="popular-card__title">Lorem</h3>
+            </a></li>
+          <li class="popular__item"><a class="popular-card" href="#">
+              <div class="popular-card__bg"><img src="images/popular-3.jpg" alt="Lorem"></div>
+              <h3 class="popular-card__title"><span>Lorem</span></h3>
+            </a></li>
+          <li class="popular__item"><a class="popular-card" href="#">
+              <div class="popular-card__bg"><img src="images/popular-4.jpg" alt="Lorem"></div>
+              <h3 class="popular-card__title popular-card__title-white">Lorem</h3>
+            </a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog-top">
+          <h2 class="catalog-top__title">Лучшие предложения</h2>
+          <div class="nav-box catalog-top__nav-box">
+            <div class="nav-box__btn catalog__nav-prev"><svg width="13" height="23" viewBox="0 0 13 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.7071 0.353516L0.707122 11.3535L11.7071 22.3535" stroke="#052E4C" />
+              </svg>
+            </div>
+            <div class="nav-box__pagination catalog__pagination"></div>
+            <div class="nav-box__btn catalog__nav-next"><svg width="13" height="23" viewBox="0 0 13 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.353546 0.353516L11.3535 11.3535L0.353546 22.3535" stroke="#052E4C" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper catalog__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-1.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-2.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem». Длинное название в три строчки</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-3.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-4.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Короткое название</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-1.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-2.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem». Длинное название в три строчки</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-3.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card"><a class="card__link" href="#"></a>
+                <div class="card__content">
+                  <div class="card-img"><img src="images/catalog-4.jpg" alt="#">
+                    <div class="card-img__box">
+                      <div class="card-img__info"><img src="images/catalog-info-1.png" alt="#"><img
+                          src="images/catalog-info-2.png" alt="#"><img src="images/catalog-info-3.png" alt="#"></div>
+                      <span class="card-img__sale">-10%</span>
+                    </div>
+                  </div>
+                  <h3 class="card__title">Короткое название</h3>
+                  <div class="card-bottom">
+                    <div class="card-price"><span class="card-price__from">от</span><span
+                        class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
+                    <div class="card-btns">
+                      <button class="btn-default">Оформить заявку</button>
+                      <button class="card-btns__cart"><img src="images/catalog-cart.svg" alt="В корзину"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <aside class="header-aside"><a class="header-aside__logo" href="/"><img src="/images/logo-small.svg" alt="#"></a><a class="header-aside__logo-big" href="/"><img src="/images/logo.svg" alt="#"></a>
-        <button class="header-aside__burger js-open-aside"><img src="/images/burger.svg" alt="#"></button>
-        <div class="header-aside__contacts"><span>Дмитров</span><a href="tel:89256455711">8 (925) 645-57-11</a><a href="tel:84999999999"> 8 (499) 999-99-99</a></div>
-        <nav>
-          <ul class="header-menu">
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-1.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-2.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-3.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-4.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-5.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-6.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-7.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-8.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#"><img src="/images/header-9.svg" alt="#"><span>Lorem</span></a></li>
-            <li class="header-menu__item"><a class="header-menu__link header-menu__link-red" href="#"><img src="/images/header-10.svg" alt="#"><span>Калькулятор</span></a></li>
-          </ul>
-        </nav>
-        <button class="header-aside__search js-open-aside"><img src="/images/header-11.svg" alt="#"></button>
-        <div class="header-aside__box-bottom">
-          <form class="header-aside-form" action="#">
-            <input class="header-aside-form__input" type="text" name="q" placeholder="Поиск">
-            <label class="header-aside-form__submit">
-              <input name="s" type="submit" value=""><svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="7" cy="7" r="6.5" transform="matrix(-1 0 0 1 14 0)" stroke="#417A82" />
-<path d="M12.5 14L16 18.5" stroke="#417A82" />
-</svg>
-            </label>
-          </form>
-          <ul class="header-aside__menu-bottom">
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Коммерческим покупателям</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-      </aside>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="swiper hero__swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="hero-slide">
-                <div class="hero-slide__bg"><img src="/images/hero.jpg" alt="Купите Что-то еще шторы"></div>
-                <div class="container">
-                  <div class="hero-slide__box">
-                    <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
-                    <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней и&nbsp;внешней lorem</p>
-                    <button class="btn-white">Калькулятор</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hero-slide">
-                <div class="hero-slide__bg"><img src="/images/hero.jpg" alt="Купите Что-то еще шторы"></div>
-                <div class="container">
-                  <div class="hero-slide__box">
-                    <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
-                    <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней и&nbsp;внешней lorem</p>
-                    <button class="btn-white">Калькулятор</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hero-slide">
-                <div class="hero-slide__bg"><img src="/images/hero.jpg" alt="Купите Что-то еще шторы"></div>
-                <div class="container">
-                  <div class="hero-slide__box">
-                    <h1 class="hero-slide__title">Купите <br><span>Что-то</span> <br>и&nbsp;еще <span>шторы</span></h1>
-                    <p class="hero-slide__descr">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней и&nbsp;внешней lorem</p>
-                    <button class="btn-white">Калькулятор</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-box hero__nav-box">
-            <div class="container">
-              <div class="nav-box__btn hero__nav-prev"><svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.7071 0.353516L0.707122 11.3535L11.7071 22.3535" stroke="#052E4C" />
-</svg>
-              </div>
-              <div class="nav-box__pagination hero__pagination"></div>
-              <div class="nav-box__btn hero__nav-next"><svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.353546 0.353516L11.3535 11.3535L0.353546 22.3535" stroke="#052E4C" />
-</svg>
-              </div>
-            </div>
-          </div>
-          <div class="nav-box-mobile hero__pagination-mobile"></div>
-        </div>
-      </section>
-      <section class="popular">
-        <h2 class="bg-title popular__bg-title">Популярное</h2>
-        <div class="container">
-          <ul class="popular__list">
-            <li class="popular__item"><a class="popular-card" href="#">
-                <div class="popular-card__bg"><img src="/images/popular-1.jpg" alt="Москитные сетки"></div>
-                <h3 class="popular-card__title"><span>Москитные</span> сетки</h3></a></li>
-            <li class="popular__item"><a class="popular-card" href="#">
-                <div class="popular-card__bg"><img src="/images/popular-2.jpg" alt="Lorem"></div>
-                <h3 class="popular-card__title">Lorem</h3></a></li>
-            <li class="popular__item"><a class="popular-card" href="#">
-                <div class="popular-card__bg"><img src="/images/popular-3.jpg" alt="Lorem"></div>
-                <h3 class="popular-card__title"><span>Lorem</span></h3></a></li>
-            <li class="popular__item"><a class="popular-card" href="#">
-                <div class="popular-card__bg"><img src="/images/popular-4.jpg" alt="Lorem"></div>
-                <h3 class="popular-card__title popular-card__title-white">Lorem</h3></a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="catalog">
-        <div class="container">
-          <div class="catalog-top">
-            <h2 class="catalog-top__title">Лучшие предложения</h2>
-            <div class="nav-box catalog-top__nav-box">
-              <div class="nav-box__btn catalog__nav-prev"><svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.7071 0.353516L0.707122 11.3535L11.7071 22.3535" stroke="#052E4C" />
-</svg>
-              </div>
-              <div class="nav-box__pagination catalog__pagination"></div>
-              <div class="nav-box__btn catalog__nav-next"><svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.353546 0.353516L11.3535 11.3535L0.353546 22.3535" stroke="#052E4C" />
-</svg>
-              </div>
-            </div>
-          </div>
-          <div class="swiper catalog__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-1.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
+    </section>
+    <section class="quiz">
+      <div class="container">
+        <div class="quiz__box">
+          <div class="quiz__box-inner">
+            <h2 class="quiz__name">Ваш помощник в выборе солнцезащиты</h2>
+            <form class="quiz-form" action="#">
+              <div class="swiper quiz__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="quiz-step">
+                      <h3 class="quiz-step__title">Для какого помещения выбираете Lorem?</h3>
+                      <div class="quiz-step__pagination"></div>
+                      <div class="quiz-step__box">
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Веранда, терраса, уличное пространство</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Помещение с мансардными окнами</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Офис</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Кухня, столовая</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Учебное или мед. учреждение</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Детская</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Помещение с проектором</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Спальня</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Стеклянные переговорные</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Балкон</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Помещение с панорамными окнами</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Зимний сад</span>
+                        </label>
                       </div>
+                      <div class="btn-white js-quiz-next">Далее</div>
                     </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="quiz-step">
+                      <h3 class="quiz-step__title">Для какого помещения выбираете Lorem?</h3>
+                      <div class="quiz-step__pagination"></div>
+                      <div class="quiz-step__box">
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Веранда, терраса, уличное пространство</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Помещение с мансардными окнами</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Офис</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Кухня, столовая</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Учебное или мед. учреждение</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Детская</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Помещение с проектором</span>
+                        </label>
+                        <label class="quiz-step__checkbox">
+                          <input type="checkbox" name="#" value="#"><span>Спальня</span>
+                        </label>
                       </div>
+                      <div class="btn-white js-quiz-next">Далее</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-2.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem». Длинное название в три строчки</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-3.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-4.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Короткое название</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-1.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-2.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem». Длинное название в три строчки</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-3.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Вертикальные жалюзи «Lorem»</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card"><a class="card__link" href="#"></a>
-                  <div class="card__content">
-                    <div class="card-img"><img src="/images/catalog-4.jpg" alt="#">
-                      <div class="card-img__box">
-                        <div class="card-img__info"><img src="/images/catalog-info-1.png" alt="#"><img src="/images/catalog-info-2.png" alt="#"><img src="/images/catalog-info-3.png" alt="#"></div><span class="card-img__sale">-10%</span>
-                      </div>
-                    </div>
-                    <h3 class="card__title">Короткое название</h3>
-                    <div class="card-bottom">
-                      <div class="card-price"><span class="card-price__from">от</span><span class="card-price__current">1200₽</span><span class="card-price__old">1000₽</span></div>
-                      <div class="card-btns">
-                        <button class="btn-default">Оформить заявку</button>
-                        <button class="card-btns__cart"><img src="/images/catalog-cart.svg" alt="В корзину"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-      </section>
-      <section class="quiz">
-        <div class="container">
-          <div class="quiz__box">
-            <div class="quiz__box-inner">
-              <h2 class="quiz__name">Ваш помощник в выборе солнцезащиты</h2>
-              <form class="quiz-form" action="#">
-                <div class="swiper quiz__swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="quiz-step">
-                        <h3 class="quiz-step__title">Для какого помещения выбираете Lorem?</h3>
-                        <div class="quiz-step__pagination"></div>
-                        <div class="quiz-step__box">
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Веранда, терраса, уличное пространство</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Помещение с мансардными окнами</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Офис</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Кухня, столовая</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Учебное или мед. учреждение</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Детская</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Помещение с проектором</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Спальня</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Стеклянные переговорные</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Балкон</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Помещение с панорамными окнами</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Зимний сад</span>
-                          </label>
-                        </div>
-                        <div class="btn-white js-quiz-next">Далее</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="quiz-step">
-                        <h3 class="quiz-step__title">Для какого помещения выбираете Lorem?</h3>
-                        <div class="quiz-step__pagination"></div>
-                        <div class="quiz-step__box">
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Веранда, терраса, уличное пространство</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Помещение с мансардными окнами</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Офис</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Кухня, столовая</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Учебное или мед. учреждение</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Детская</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Помещение с проектором</span>
-                          </label>
-                          <label class="quiz-step__checkbox">
-                            <input type="checkbox" name="#" value="#"><span>Спальня</span>
-                          </label>
-                        </div>
-                        <div class="btn-white js-quiz-next">Далее</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
